@@ -20,7 +20,7 @@ def load_nao_data(dates):
 
 	nao_index_footprint = []
 
-	data_file = np.genfromtxt('/Volumes/catto/users/mp671/OBS_DATA/NAO/norm.daily.nao.index.b500101.current.ascii.txt',dtype=float,invalid_raise=False,delimiter='')
+	data_file = np.genfromtxt('/Volumes/catto/users/mp671/python_code/willis/wtw_ajgre/WINDSTORM_MODEL_NEW/data/nao/norm.daily.nao.index.b500101.current.ascii.txt',dtype=float,invalid_raise=False,delimiter='')
 
 	years = data_file[:,0].astype(int).astype(str)
 	months = np.char.zfill(data_file[:,1].astype(int).astype(str),2)
